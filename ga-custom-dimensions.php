@@ -1,8 +1,9 @@
 <?php
 /*
 Plugin Name: ga-custom-dimensions
+Plugin URI: https://github.com/megumiteam/ga-custom-dimension
 Version: 0.1.0
-Description: ga-custom-dimensions
+Description: GAのカスタムディメンジョンを設置するためのプラグインです
 Author: digitalcube
 Text Domain: ga-custom-dimensions
 Domain Path: /languages

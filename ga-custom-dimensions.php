@@ -21,6 +21,7 @@ class GA_Custom_Dimensions {
 	public function register()
 	{
 		add_filter( 'wp_total_hacks_google_analytics', 'do_shortcode' );
+		add_filter( 'tg_google_analytics_code', 'do_shortcode' );
 
 		$short_codes = array(
 			'ga_custom_demention_author',
@@ -36,7 +37,7 @@ class GA_Custom_Dimensions {
 
 	public static function ga_custom_demention_author()
 	{
-		if ( ! is_singular() ) {
+		if ( ! is_single() ) {
 			return '';
 		}
 
@@ -47,7 +48,7 @@ class GA_Custom_Dimensions {
 
 	public static function ga_custom_demention_published()
 	{
-		if ( ! is_singular() ) {
+		if ( ! is_single() ) {
 			return '';
 		}
 
@@ -58,7 +59,7 @@ class GA_Custom_Dimensions {
 
 	public static function ga_custom_demention_category()
 	{
-		if ( ! is_singular() ) {
+		if ( ! is_single() ) {
 			return '';
 		}
 
@@ -67,7 +68,7 @@ class GA_Custom_Dimensions {
 
 	public static function ga_custom_demention_media()
 	{
-		if ( ! is_singular() ) {
+		if ( ! is_single() ) {
 			return '';
 		}
 
